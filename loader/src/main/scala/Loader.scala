@@ -20,7 +20,7 @@ object Loader {
       .option("rowTag","row")
       .xml(args(0))
     // Write to csv
-    df.write.csv("/scalvo/stackoverflow/users.csv")
+    df.write.csv("/scalvo/stackoverflow/")
 
     sc.stop()
   }
