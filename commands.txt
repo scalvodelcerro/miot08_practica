@@ -1,0 +1,2 @@
+# Ejecutar Loader
+spark2-submit --class "Loader" --packages com.databricks:spark-xml_2.11:0.5.0 target/scala-2.11/loader_2.11-1.0.jar "/stackoverflow/Users_5e.xml"
