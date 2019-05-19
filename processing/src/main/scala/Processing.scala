@@ -2,10 +2,9 @@ import org.apache.spark._
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.types.{StructType, StructField, StringType, DoubleType};
 import com.databricks.spark.xml._
-import org.apache.log4j.Logger
-import org.apache.log4j.Level
+/* spark-shell --conf spark.ui.port=4050 --packages com.databricks:spark-xml_2.10:0.4.1 */
 
-object Loader {
+object Processing {
   def main(args: Array[String]) {
     if (args.length < 1) {
       System.err.println("Uso: Loader <fichero>")
